@@ -59,13 +59,41 @@ public class Variavel {
     //Boolean - é um tipo de dado que armazena verdadeiro ou falso.
     boolean isEstudante1 = true; // true é verdadeiro.
     boolean isProgramador = false; //false é falso.
-    System.out.println("Estudante: " + isEstudante); // é possivel imprimir o valor da variavel booleana.
+    System.out.println("Estudante: " + isEstudante1); // é possivel imprimir o valor da variavel booleana.
     System.out.println("Programador: " + isProgramador);
     
     //float - é um numero de ponto flutuante de precisão simples. ocupando 32 bits e 4 bytes.
 
     float altura1 = 1.75f; // é possivel usar a letra f para indicar o tipo.
     System.out.println("Altura: " + altura1);
+
+    // Exercicios de fixação.
+
+    int valor = 10;
+    int dobro = valor * 2;
+    System.out.println("O dobro de " + valor + " é " + dobro);
+
+    char letra = 'B';
+    int valorASCII = letra;
+    System.out.println("O valor ASCII da letra " + letra + " é " + valorASCII);
+
+    double valor1 = 15.75;
+    double valor2 = 20.40;
+    double somaDouble = valor1 + valor2;
+
+    System.out.println("A soma de " + valor1 + " + " + valor2 + " é " + somaDouble);
+
+    long milhoes = 2_000_000_000L;
+    int ConvertLong = (int) milhoes;
+
+    System.out.println("O valor de " + milhoes + " convertido para int é " + ConvertLong);
+
+    String saudacao = "Olá, Mundo!";
+    String saudacao2 = saudacao +" Bem vindo ao Java!";
+    System.out.println(saudacao2);
+
+    
+
 
     }
 }

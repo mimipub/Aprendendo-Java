@@ -1,7 +1,7 @@
 package aula2;
 
-import java.util.Scanner;
 import java.util.Locale;
+import java.util.Scanner;
 public class if_Else {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
@@ -16,6 +16,7 @@ public class if_Else {
         System.out.println("String: " + c);
         System.out.printf("Double: %.4f%n", b);
         System.out.println("Int: " + a);
+        
         sc.close();
     }
 }
