@@ -92,7 +92,7 @@ public class Variavel {
     String saudacao2 = saudacao +" Bem vindo ao Java!";
     System.out.println(saudacao2);
 
-    
+
 
 
     }
