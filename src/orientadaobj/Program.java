@@ -8,26 +8,29 @@ public class Program {
 
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-        double Xa, Xb, Xc, Ya, Yb, Yc;
+
+        Triangle X, Y;
+        X = new Triangle();
+        Y = new Triangle();
+
         System.out.println("Enter the measures of triangle: x");
-        Xa = sc.nextDouble();
-        Xb = sc.nextDouble();
-        Xc = sc.nextDouble();
+        X.a = sc.nextDouble();
+        X.b = sc.nextDouble();
+        X.c = sc.nextDouble();
         System.out.println("Enter the measures of triangle: y");
-        Ya = sc.nextDouble();
-        Yb = sc.nextDouble();
-        Yc = sc.nextDouble();
+        Y.a = sc.nextDouble();
+        Y.b = sc.nextDouble();
+        Y.c = sc.nextDouble();
 
-        //calculo do perimetro
-        Double perimetroX = (Xa + Xb + Xc)/2;
-        Double perimetroY = (Ya + Yb + Yc)/2;
+        //calculo do perimetro e o triangulo
+        Double p = (X.a + X.b + X.c)/2;
+        double areaX = Math.sqrt(p*(p-X.a)*(p-X.b)*(p-X.c));
 
-        //calculo do
-        double areaX = Math.sqrt(perimetroX*(perimetroX-Xa)*(perimetroX-Xb)*(perimetroX-Xc));
-        double areaY = Math.sqrt(perimetroY*(perimetroY-Ya)*(perimetroY-Yb)*(perimetroY-Yc));
-        System.out.printf("Triangle X area: %.4f%n  ", areaX);
+        //calculo do perimetro e o triangulo
+        p = (Y.a + Y.b + Y.c)/2;
+        double areaY = Math.sqrt(p*(p-Y.a)*(p-Y.b)*(p-Y.c));
+        System.out.printf("Triangle X area: %.4f%n", areaX);
         System.out.printf("Triangle Y area: %.4f%n ", areaY);
-
 
         if (areaX > areaY) {
             System.out.println("Larger area: X");
