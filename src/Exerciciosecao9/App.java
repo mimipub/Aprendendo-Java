@@ -9,8 +9,9 @@ public class App {
 
         System.out.println("digite o número da conta");
         int numero = sc.nextInt();
+        sc.nextLine();
         System.out.println("digite o nome do titular da conta");
-        String titular = sc.next();
+        String titular = sc.nextLine();
         System.out.println("Deseja depositar um valor inicial? (s/n)");
         char opcao = sc.next().charAt(0);
 
@@ -19,8 +20,8 @@ public class App {
             conta = new Conta(numero, titular);
         }else if (Character.toLowerCase(opcao) == 's'){
             System.out.println("digite o valor do deposito inicial");
-            double saldo = sc.nextDouble();
-            conta = new Conta(numero, titular,saldo);
+            double depositoInicial = sc.nextDouble();
+            conta = new Conta(numero, titular, depositoInicial);
         }else{
             System.out.println("opção inválida");
         }
@@ -29,12 +30,11 @@ public class App {
         System.out.println("Account data");
         System.out.println(conta);
 
-
         System.out.println();
         System.out.println("deposite um valor");
         double deposito = sc.nextDouble();
         System.out.println("Dados atualizados:");
-        conta.depositoInicial(deposito);
+        conta.depositar(deposito);
         System.out.println(conta);
 
         System.out.println("digite o valor do saque");

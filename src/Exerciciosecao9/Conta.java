@@ -12,7 +12,7 @@ public class Conta {
     public Conta(int numero, String titular, double saldo) {
         this.numero = numero;
         this.titular = titular;
-        this.saldo = saldo;
+        depositar(saldo);
     }
 
     public int getNumero() {
@@ -27,7 +27,7 @@ public class Conta {
         return saldo;
     }
 
-    public void depositoInicial(double deposito) {
+    public void depositar(double deposito) {
         this.saldo += deposito;
     }
 
