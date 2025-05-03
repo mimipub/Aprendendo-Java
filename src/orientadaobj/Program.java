@@ -23,18 +23,15 @@ public class Program {
         Y.c = sc.nextDouble();
 
         //calculo do perimetro e o triangulo
-        Double p = (X.a + X.b + X.c)/2;
-        double areaX = Math.sqrt(p*(p-X.a)*(p-X.b)*(p-X.c));
+        double areaX = X.area(X.a, X.b, X.c);
+        double areaY = Y.area(Y.a, Y.b, Y.c);
 
-        //calculo do perimetro e o triangulo
-        p = (Y.a + Y.b + Y.c)/2;
-        double areaY = Math.sqrt(p*(p-Y.a)*(p-Y.b)*(p-Y.c));
         System.out.printf("Triangle X area: %.4f%n", areaX);
         System.out.printf("Triangle Y area: %.4f%n ", areaY);
 
         if (areaX > areaY) {
             System.out.println("Larger area: X");
-        }else {
+        }else{
             System.out.println("Larger area: Y");
         }
         sc.close();
