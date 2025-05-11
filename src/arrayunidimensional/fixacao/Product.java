@@ -1,4 +1,4 @@
-package arrayunidimensional;
+package arrayunidimensional.fixacao;
 
 public class Product {
     private String name;

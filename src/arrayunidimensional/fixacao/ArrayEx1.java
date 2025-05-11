@@ -1,4 +1,4 @@
-package arrayunidimensional;
+package arrayunidimensional.fixacao;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -10,7 +10,7 @@ public class ArrayEx1 {
         int n = sc.nextInt();
         Product[] array = new Product[n];
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < array.length; i++) {
             sc.nextLine();
             String name = sc.next();
             double price = sc.nextDouble();
@@ -19,12 +19,12 @@ public class ArrayEx1 {
 
         double total = 0;
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < array.length; i++) {
             total += array[i].getPrice();
         }
         double average = total / n;
 
-        System.out.println(" Average price " + average);
+        System.out.println("Average price = " + average);
 
 
         sc.close();
