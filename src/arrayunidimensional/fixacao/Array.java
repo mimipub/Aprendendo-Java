@@ -1,4 +1,4 @@
-package arrayunidimensional;
+package arrayunidimensional.fixacao;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -24,7 +24,5 @@ public class Array {
         double v = sum / n;
         System.out.println("a media da altura é " + v );
         sc.close();
-
     }
-
 }
