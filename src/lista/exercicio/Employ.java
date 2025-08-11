@@ -16,8 +16,8 @@ public class Employ {
         return id;
     }
 
-    public void setGrosSalary(double tax) {
-        this.salary += (salary * tax / 100);
+    public void increasySalary(double percentage) {
+        this.salary += (salary * percentage / 100);
     }
 
     @Override

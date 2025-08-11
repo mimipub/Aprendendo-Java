@@ -10,6 +10,6 @@ Repositório criado para documentar meu progresso no curso "Java COMPLETO Progra
 - Programação orientada a objetos (POO)
 - Tratamento de exceções
 - Manipulação de arquivos
-- Interfaces, herança, polimorfismo
+- Interfaces, herança_e_polimorfismo, polimorfismo
 
 🚧 Repositório em constante evolução.

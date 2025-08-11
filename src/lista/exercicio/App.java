@@ -1,10 +1,8 @@
 package lista.exercicio;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 public class App {
     public static void main(String[] args) {
@@ -45,7 +43,7 @@ public class App {
         }else{
             System.out.println("Enter the percentage:");
             double percentage = sc.nextDouble();
-            employ.setGrosSalary(percentage);
+            employ.increasySalary(percentage);
         }
         System.out.println();
         System.out.println("List of employees:");
