@@ -1,5 +1,9 @@
 package herança_e_polimorfismo.ex_fixacao2;
 
+import herança_e_polimorfismo.ex_fixacao2.model.Employ;
+import herança_e_polimorfismo.ex_fixacao2.model.HealthExpenditures;
+import herança_e_polimorfismo.ex_fixacao2.model.TaxPayers;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;

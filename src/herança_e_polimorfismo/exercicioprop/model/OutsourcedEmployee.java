@@ -1,4 +1,4 @@
-package herança_e_polimorfismo.exercicioprop;
+package herança_e_polimorfismo.exercicioprop.model;
 
 public class OutsourcedEmployee extends Employee {
     private double additionalCharge;

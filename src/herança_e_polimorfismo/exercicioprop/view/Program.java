@@ -1,4 +1,7 @@
-package herança_e_polimorfismo.exercicioprop;
+package herança_e_polimorfismo.exercicioprop.view;
+
+import herança_e_polimorfismo.exercicioprop.model.Employee;
+import herança_e_polimorfismo.exercicioprop.model.OutsourcedEmployee;
 
 import java.util.ArrayList;
 import java.util.List;

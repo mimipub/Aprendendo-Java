@@ -1,4 +1,4 @@
-package herança_e_polimorfismo.ex_fixacao2;
+package herança_e_polimorfismo.ex_fixacao2.model;
 
 public class HealthExpenditures extends TaxPayers {
     private double healthExpenditures;

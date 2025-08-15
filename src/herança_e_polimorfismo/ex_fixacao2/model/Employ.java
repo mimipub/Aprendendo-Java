@@ -1,6 +1,6 @@
-package herança_e_polimorfismo.ex_fixacao2;
+package herança_e_polimorfismo.ex_fixacao2.model;
 
-public class Employ extends TaxPayers{
+public class Employ extends TaxPayers {
     private Integer QtdeFuncionarios;
 
     public Employ() {
