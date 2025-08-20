@@ -7,12 +7,7 @@ import java.io.IOException;
 public class Buffer_File {
     public static void main(String[] args) {
         String path = "C:\\temp\\seila.txt";
-        FileReader fr = null; // ler o arquivo caracter por caracter
-        BufferedReader br = null; // ler o arquivo linha por linha
-
-        try {
-            fr = new FileReader(path);
-            br = new BufferedReader(fr);
+        try(BufferedReader br = new BufferedReader(new FileReader(path))) {
 
             String line = br.readLine();
             while (line != null) {
@@ -21,17 +16,6 @@ public class Buffer_File {
             }
         } catch (IOException e) {
             System.out.println("Error" + e.getMessage());
-        } finally {
-            try {
-                if (br != null) {
-                    br.close();
-                }
-                if (fr != null) {
-                    fr.close();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
     }
 }
